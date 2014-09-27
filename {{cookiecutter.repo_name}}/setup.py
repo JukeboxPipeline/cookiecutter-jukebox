@@ -33,6 +33,10 @@ class PyTest(TestCommand):
         errcode = pytest.main(self.test_args)
         sys.exit(errcode)
 
+about={}
+initfile = os.path.join(here, 'src', '{{ cookiecutter.repo_name }}', '__init__.py')
+with open(initfile) as fp:
+    exec(fp.read(), about)
 
 long_description = read('README.rst', 'HISTORY.rst')
 install_requires = []
@@ -41,11 +45,11 @@ tests_require = ['pytest']
 
 setup(
     name='{{ cookiecutter.repo_name }}',
-    version='{{ cookiecutter.version }}',
+    version=about['__version__'],
     description='{{ cookiecutter.project_short_description }}',
     long_description=long_description,
-    author='{{ cookiecutter.full_name }}',
-    author_email='{{ cookiecutter.email }}',
+    author=about['__author__'],
+    author_email=about['__email__'],
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
     packages=find_packages('src'),
     package_dir={'': 'src'},
