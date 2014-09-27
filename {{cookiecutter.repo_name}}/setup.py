@@ -60,7 +60,6 @@ setup(
     license='BSD',
     zip_safe=False,
     keywords='{{ cookiecutter.repo_name }}',
-    test_suite='{{ cookiecutter.repo_name }}.test.{{ cookiecutter.repo_name }}',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
