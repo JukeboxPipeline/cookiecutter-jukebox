@@ -1,11 +1,11 @@
 ======================
-cookiecutter-pypackage
+cookiecutter-jukebox
 ======================
 
-Cookiecutter template for a Python package. See https://github.com/audreyr/cookiecutter.
+Cookiecutter template for a Python package in the JukeboxPipeline. See https://github.com/audreyr/cookiecutter.
 
-I adapted the pypackage from nekroze a little bit for my needs.
-The doc has the sphinx theme already installed. There are 2 scripts that help
+I adapted the pypackage from storax a little bit.
+The doc has a modified readthedocs theme already installed. There are 2 scripts that help
 building the apidoc (generates rst files for your packages). The official apidoc
 had a buggy formatting. Have a look at ``docs/updatedoc.py``. It is setup so that if the sphinx build is invoked,
 the apidoc is generated before the actual build. This ensures that the apidoc is also built on readthedocs.
@@ -22,12 +22,12 @@ Usage
 
 Generate a Python package project::
 
-    cookiecutter https://github.com/storax/cookiecutter-pypackage.git
+    cookiecutter https://github.com/JukeboxPipeline/cookiecutter-pypackage.git
 
 Then:
 
 * Create a repo and put it there.
-* Add the repo to your Travis CI account.
+* Add the repo to your Travis CI account. **Optional** 
 * Add the repo to your ReadTheDocs account + turn on the ReadTheDocs service hook.
 * Add the repo to coveralls
 * Run `tox` to make sure all tests pass.
@@ -41,7 +41,7 @@ Don't worry, you have options:
 Similar Cookiecutter Templates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* `nekroze/cookiecutter-pypackage`_: The original pypackage i forked.
+* `storax/cookiecutter-pypackage`_: The original package that was slightly modified.
 
 Fork This
 ~~~~~~~~~
