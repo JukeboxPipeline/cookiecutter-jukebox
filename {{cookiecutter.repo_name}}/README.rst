@@ -8,7 +8,7 @@
 .. image:: http://img.shields.io/pypi/dm/{{ cookiecutter.repo_name }}.png
     :target: https://pypi.python.org/pypi/{{ cookiecutter.repo_name }}
 
-.. image:: http://img.shields.io/pypi/l/{{ cookiecutter.repo_name }}.svg
+.. image:: http://img.shields.io/pypi/l/{{ cookiecutter.repo_name }}.png
     :target: https://pypi.python.org/pypi/{{ cookiecutter.repo_name }}
 
 
@@ -20,11 +20,4 @@
 Documentation
 -------------
 
-The full documentation is at http://{{ cookiecutter.repo_name }}.rtfd.org.
-
-
-Features
---------
-
-* TODO
-
+The full documentation is at http://pythonhosted.org/{{ cookiecutter.repo_name }}.
